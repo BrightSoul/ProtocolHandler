@@ -25,7 +25,7 @@ This configuration defined `appexec` as then custom protocol. The application wi
  - [appexec://chrome?website=www.youtube.com](appexec://chrome?website=www.youtube.com)
  - [appexec://firefox?website=www.youtube.com](appexec://firefox?website=www.youtube.com)
 
-The hostname part of the URL (e.g. `firefox` and `chrome` in these cases) will be searched in the `Handlers` section of the `appsettings.json` file. If found, then the `Executable` will be run with its `Parameters`. Named placeholders such as `{website}` will be replaced with the value found in the querystring key by the same name (eg. `www.youtube.com` in these cases).
+The hostname part of the URL (e.g. `firefox` and `chrome` in these cases) will be searched in the `Handlers` section of the `appsettings.json` file. If found, then the `Executable` will be run with its `Arguments`. Named placeholders such as `{website}` will be replaced with the value found in the querystring key by the same name (eg. `www.youtube.com` in these cases).
 
 ## 
 Publish the application by running the following command in the project directory:
